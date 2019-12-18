@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" />
+	<title>Hello, WebVR! • A-Frame</title>
+	<meta name="description" content="Hello, WebVR! • A-Frame" />
+	<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/donmccurdy/aframe-physics-system@v2.1.0/dist/aframe-physics-system.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
+
+  </head>
+  
+  <body>
+<a-scene physics="debug: true">
+  
+  <a-assets>
+  <img id="marc" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2FRpG2U.jpg?v=1576593973193">
+  <img id="marc2" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Fpantalla%2016%209.jpg?v=1576596356809">
+  <img id="pandasbg" src="https://cdn.glitch.com/46302d44-5140-4920-a52f-7dedc8502120%2FMesh_PandaAZULBG.png?v=1576672942089">
+	<video id="num1" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2FV%C3%ADdeo%20nuevo.mp4?v=1576597347225"></video>
+	<video id="num2" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2FMaltratan%20a%20dos%20pandas%20en%20el%20zoologico.mp4?v=1576596934524"></video>
+  <video id="num3" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Fchinometelostiapanda.mp4?v=1576587261471"></video>
+  <video id="num4" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Fheridas%20panda%20min%200.09.mp4?v=1576587282724"></video>
+  <video id="num5" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Ftirando%20piedras%20a%20los%20pandas.mp4?v=1576597269488"></video>
+  <video id="num6" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Ffotospandas.mp4?v=1576587268354"></video>
+  <video id="num7" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Fvideo%20panda%205.mp4?v=1576598248197"></video>
+  <video id="num8" autoplay loop="true" src="https://cdn.glitch.com/eb597da6-f12b-4a31-bc8c-3e695eee5bdd%2Fvideo%20panda%207.mp4?v=1576598977586"></video>
+  <video id="num9" autoplay loop="true" src="https://cdn.glitch.com/5cfcf613-2765-4882-838b-7e12f2de3c8e%2FVIDEO%20PANDA%202.mp4?v=1576667801674"></video>
+  <video id="num10" autoplay loop="true" src="https://cdn.glitch.com/5cfcf613-2765-4882-838b-7e12f2de3c8e%2FVIDEO%20PANDA%203.mp4?v=1576667802317"></video>
+    
+     <a-asset-item id="panda" src="https://poly.googleusercontent.com/downloads/c/fp/1576665787464461/2T6A0o4Kq2h/aqY2sMji-fO/Mesh_Panda.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-sky src="https://cdn.glitch.com/5cfcf613-2765-4882-838b-7e12f2de3c8e%2Ffoto%20360.jpg?v=1576667865826" rotation="0 -130 0"></a-sky>
+  <a-text font="monoid" value="YOU CAN LOOK AWAY," width="14" position="5 1.5 5" rotation="0 -160 0" ></a-text>
+  <a-text font="monoid" value="BUT IT STILL HAPPENS." width="14" position="-1 1.5 7" rotation="0 -235 0" ></a-text>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 -15 0" position="2 2.02 -1.51"></a-plane>
+  <a-video src="#num1" width="1.5" height="0.85" rotation="0 -15 0" position="2 2 -1.5"></a-video>
+  <a-plane src="#marc" width="2.1" height="1.27" rotation="0 0 0" position="0 3.03 -2.01"></a-plane>
+  <a-video src="#num2" width="2" height="1.13" rotation="0 0 0" position="0 3 -2"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 20 0" position="-2.01 2.12 -1.41"></a-plane>
+  <a-video src="#num3" width="1.5" height="0.85" rotation="0 20 0" position="-2 2.1 -1.4"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 10 0" position="-1.51 2.92 -1.71"></a-plane>
+  <a-video src="#num4" width="1.5" height="0.85" rotation="0 10 0" position="-1.5 2.9 -1.7"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 10 0" position="-1.21 0.22 -1.71"></a-plane>
+  <a-video src="#num5" width="1.5" height="0.85" rotation="0 10 0" position="-1.2 0.2 -1.7"></a-video>
+  <a-plane src="#marc2" width="0.95" height="1.58" rotation="0 10 0" position="-1.41 1.22 -1.81"></a-plane>
+  <a-video src="#num6" width="0.85" height="1.5" rotation="0 10 0" position="-1.4 1.2 -1.8"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 -15 0" position="1.61 1.22 -1.41"></a-plane>
+  <a-video src="#num7" width="1.5" height="0.85" rotation="0 -15 0" position="1.6 1.2 -1.4"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 35 0" position="-3.31 0.72 -1.31"></a-plane>
+  <a-video src="#num8" width="1.5" height="0.85" rotation="0 35 0" position="-3.3 0.7 -1.3"></a-video>
+  <a-plane src="#marc" width="2.1" height="1.27" rotation="10 -40 0" position="3.01 3.02 -1.31"></a-plane>
+  <a-video src="#num9" width="2" height="1.13" rotation="10 -40 0" position="3 3 -1.3"></a-video>
+  <a-plane src="#marc" width="1.58" height="0.95" rotation="0 -15 0" position="1.01 0.21 -1.41"></a-plane>
+  <a-video src="#num10" width="1.5" height="0.85" rotation="0 -15 0" position="1 0.2 -1.4"></a-video>  
+  <a-plane src="#pandasbg" static-body position="0 -0.5 0" rotation="-90 0 0" width="6" height="6"></a-plane>
+  
+   <a-entity gltf-model="#panda" scale="0.005 0.005 0.005" position="0 0.5 0" ></a-entity>
+ 
+</a-scene>
+  </body>
+</html>
